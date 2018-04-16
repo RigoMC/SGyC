@@ -1,0 +1,20 @@
+<div class="col-sm-12 row">
+  <div class="col-dm-4 text-center">
+    <label for="tacos1">Tacos tipo 1:</label>
+    <input type="number" class="form-control" placeholder="Coloca el numero de tacos" #tacos1>
+  </div>
+  <div class="col-dm-4 text-center">
+      <label for="tacos2">Tacos tipo 2:</label>
+      <input type="number" class="form-control" placeholder="Coloca el numero de tacos" #tacos2>
+    </div>
+    <div class="col-dm-4 text-center" >
+        <label for="tacos3">Tacos tipo 3:</label>
+        <input type="number" class="form-control" placeholder="Coloca el numero de tacos" #tacos3>
+      </div>
+</div>
+<div class="col-sm-12 row">
+  <button class="btn btn-outline" (click)="addComanda(tacos1,tacos2,tacos3);">
+    añadir
+    <i class="fas fa-plus"></i>
+  </button>
+</div>
