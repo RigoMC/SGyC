@@ -2,3 +2,15 @@ label{
     color: azure;
     size: 1.3em;
 }
+.separadorInput
+{
+    margin-left: 10em;
+}
+.separadorbtn
+{
+  margin-top: 0.5em;
+}
+.letrablack
+{
+  color: black;
+}

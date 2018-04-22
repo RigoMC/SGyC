@@ -29,7 +29,7 @@ export class AddprodComponent implements OnInit {
   addComanda(t1,t2,t3)
   {
     var x = t1.value+','+t2.value+','+t3.value;
-    var y = (t1.value+t2.value+t3.value)*8;
+    var y = (t1.value*8)+(t2.value*8)+(t3.value*8);
     this.firesService.setComandas('sin folio',x,y);
     t1.value = null;
     t2.value = null;

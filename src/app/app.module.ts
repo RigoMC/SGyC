@@ -18,7 +18,9 @@ import { InfopedComponent } from './componentes/infoped/infoped.component';
 import { AddprodComponent } from './componentes/addprod/addprod.component'
 
 //importacion de servicios
-import { FiresService } from './servicios/fires.service'
+import { FiresService } from './servicios/fires.service';
+import { ComcardComponent } from './componentes/tarjetas/comcard/comcard.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { FiresService } from './servicios/fires.service'
     BarltComponent,
     InfocomComponent,
     InfopedComponent,
-    AddprodComponent
+    AddprodComponent,
+    ComcardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

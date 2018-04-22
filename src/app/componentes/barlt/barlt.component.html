@@ -1,22 +1,25 @@
-<div class="col-sm-12">
-  <div class="row col-sm-12">
-    <div class="col-md-4">
-      <button class="btn btn-outline-secondary">
-        <i class="fas fa-plus-circle"></i>
-      </button>
-    </div>
-    <div class="col-md-4">
-      <button class="btn btn-outline-secondary">
-          <i class="fas fa-plus-circle"></i>
-      </button>
-    </div>
-    <div class="col-md-4">
-      <button class="btn btn-outline-secondary">
-          <i class="fas fa-plus-circle"></i>
-      </button>
-    </div>
+<!-->inicia el menu de comensales</!-->
+<div class="row margenes">
+  <div class="col-md-1-6">
+    <button type="button" name="button" class="btn btn-outline" (click)="mostrar=true">
+      <i class="fas fa-plus"></i>
+    </button>
   </div>
-  <div class="col-sm-12">
-    <h3>hola</h3>
+  <div class="col-md-1">
+
   </div>
+  <div class="col-md-1-6">
+    <button type="button" name="button" class="btn btn-outline" (click)="mostrar=false">
+      <i class="fas fa-ban"></i>
+    </button>
+  </div>
+</div>
+<!-->termina el menu de comensales</!-->
+
+
+<!-->Al agregar tarjetas, las vistas no se modificar, solo se sobre ponen al resto del codigo
+     habra que colocar todo fijo para que solo esta seccion funcione con scroll.
+</!-->
+<div class="muestrario" >
+<app-comcard *ngIf="mostrar"></app-comcard>
 </div>

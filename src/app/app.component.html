@@ -1,36 +1,46 @@
 <!--inicia navegador-->
-<nav class="navbar">
-    <div class="row col-sm-12">
-      <div class="col-md-4 text-left">
-        <h2>Comandas</h2>
-      </div>
-      <div class="col-md-4 text-center">
-        <h1>SGyC</h1>
-      </div>
-      <div class="col-md-4">
-      </div>
-    </div>
-  </nav>
+<app-navbar></app-navbar>
 <!--fin del navegador-->
 
 <!--inicia body-->
-<div class="col-sm-12">
   <div class="row col-sm-12">
     <div class="col-md-2">
-      <app-barlt></app-barlt>
+      <app-barlt *ngIf="visiblebl"></app-barlt>
     </div>
     <div class="col-md-10">
       <app-infocom></app-infocom>
-      <app-infoped></app-infoped>
+
+
+      <div class="col-sm-12 row alert alert-primary">
+          <div class="col-md-4">
+              <h3>Pedido</h3>
+          </div>
+          <div class="col-md-4">
+            <h2>
+              <b #folioComanda>No se ha actualizado</b>
+            </h2>
+          </div>
+          <div class="col-md-4 row">
+            <div class="col-md-2">
+              <button class="btn btn-outline" (click)="visiblebl=true">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-outline" (click)="visiblebl=false">
+                    <i class="fas fa-ban"></i>
+                  </button>
+            </div>
+          </div>
+        </div>
+
+
     </div>
   </div>
   <div class="col-sm-12 row">
     <div class="col-md-2"></div>
-    <div class="col-md-10">
-      <app-addprod></app-addprod>
+    <div class="col-md-10 align-self-end position-fixed moverIzq">
+      <app-addprod *ngIf="visiblebl"></app-addprod>
     </div>
-  </div>  
-</div>
-  
-  
+  </div>
 <!--finaliza body-->
