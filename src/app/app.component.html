@@ -3,44 +3,53 @@
 <!--fin del navegador-->
 
 <!--inicia body-->
-  <div class="row col-sm-12">
-    <div class="col-md-2">
-      <app-barlt *ngIf="visiblebl"></app-barlt>
+<div class="row">
+  <div class="col-md-2">
+    <app-navbarmn></app-navbarmn>
+  </div>
+  <div class="col-md-10">
+    <div class="row col-sm-12">
+      <div class="col-md-2">
+        <app-barlt *ngIf="visiblebl"></app-barlt>
+      </div>
+      <div class="col-md-10">
+        <app-infocom></app-infocom>
+  
+  
+        <div class="col-sm-12 row navbar-dark bg-dark" style="color:#FFF;margin-top: 0.2em;">
+            <div class="col-md-4">
+                <h3>Pedido</h3>
+            </div>
+            <div class="col-md-4">
+              <h2>
+                <b #folioComanda>No se ha actualizado</b>
+              </h2>
+            </div>
+            <div class="col-md-4 row">
+              <div class="col-md-2">
+                <button class="btn btn-outline" (click)="visiblebl=true">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+              <div class="col-md-2">
+                  <button class="btn btn-outline" (click)="visiblebl=false">
+                      <i class="fas fa-ban"></i>
+                    </button>
+              </div>
+            </div>
+          </div>
+  
+  
+      </div>
     </div>
-    <div class="col-md-10">
-      <app-infocom></app-infocom>
-
-
-      <div class="col-sm-12 row alert alert-primary">
-          <div class="col-md-4">
-              <h3>Pedido</h3>
-          </div>
-          <div class="col-md-4">
-            <h2>
-              <b #folioComanda>No se ha actualizado</b>
-            </h2>
-          </div>
-          <div class="col-md-4 row">
-            <div class="col-md-2">
-              <button class="btn btn-outline" (click)="visiblebl=true">
-                <i class="fas fa-plus"></i>
-              </button>
-            </div>
-            <div class="col-md-2">
-                <button class="btn btn-outline" (click)="visiblebl=false">
-                    <i class="fas fa-ban"></i>
-                  </button>
-            </div>
-          </div>
-        </div>
-
-
+    <div class="col-sm-12 row">
+      <div class="col-md-2"></div>
+      <div class="col-md-10 align-self-end position-fixed moverIzq">
+        <app-addprod *ngIf="visiblebl"></app-addprod>
+      </div>
     </div>
   </div>
-  <div class="col-sm-12 row">
-    <div class="col-md-2"></div>
-    <div class="col-md-10 align-self-end position-fixed moverIzq">
-      <app-addprod *ngIf="visiblebl"></app-addprod>
-    </div>
-  </div>
+</div>
+
+  
 <!--finaliza body-->

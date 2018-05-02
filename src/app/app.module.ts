@@ -14,23 +14,23 @@ import {environment} from '../environments/environment';
 //importacion de componentes
 import { BarltComponent } from './componentes/barlt/barlt.component';
 import { InfocomComponent } from './componentes/infocom/infocom.component';
-import { InfopedComponent } from './componentes/infoped/infoped.component';
 import { AddprodComponent } from './componentes/addprod/addprod.component'
 
 //importacion de servicios
 import { FiresService } from './servicios/fires.service';
 import { ComcardComponent } from './componentes/tarjetas/comcard/comcard.component';
-import { NavbarComponent } from './componentes/navbar/navbar.component'
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { NavbarmnComponent } from './componentes/navbarmn/navbarmn.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     BarltComponent,
     InfocomComponent,
-    InfopedComponent,
     AddprodComponent,
     ComcardComponent,
-    NavbarComponent
+    NavbarComponent,
+    NavbarmnComponent
   ],
   imports: [
     BrowserModule,
